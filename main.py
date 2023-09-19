@@ -34,7 +34,7 @@ def main():
         manager.scene.render(screen)
         show_fps(screen, clock, fps_font, fps_bg)
         manager.scene.handle_events(events)
-        manager.scene.update()
+        manager.scene.update(clock=clock, screen=screen)
         clock.tick(120)
         pygame.display.flip()
 
